@@ -1,0 +1,125 @@
+/* Conteneur du tableau pour limiter la largeur et centrer */
+.table-container {
+    max-width: 90%; /* Limite la largeur du tableau */
+    margin: auto; /* Centre le tableau horizontalement */
+    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+  }
+  
+  table {
+    width: 100%; /* Utilise la largeur maximale du conteneur */
+    border-collapse: collapse;
+    margin-top: 20px; /* Ajoute un peu d'espace au-dessus du tableau */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50; /* Couleur d'arrière-plan pour les en-têtes */
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styles pour les boutons */
+  .edit-btn {
+    background-color: #ffeb3b; /* Jaune */
+    color: black; /* Texte noir pour le contraste */
+  }
+  
+  .delete-btn {
+    background-color: #f44336; /* Rouge */
+    color: white;
+  }
+  
+  .edit-btn, .delete-btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .create-event-btn {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Bouton arrondi */
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; /* Centrer le bouton */
+  }
+  
+  /* Style de base de la modal */
+  .ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+  }
+  
+  .ReactModal__Content {
+    position: relative;
+    max-width: 500px; /* Largeur maximale de la popup */
+    width: 90%; /* Largeur en % pour s'adapter à différentes tailles d'écran */
+    margin: auto; /* Centre la popup dans l'espace disponible */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Bords arrondis */
+    outline: none; /* Supprime le contour lors de la sélection */
+  }
+  
+  /* Styles pour le formulaire dans la modal */
+  .modal-form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .modal-form input,
+  .modal-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box; /* S'assure que le padding ne change pas la largeur */
+  }
+  
+  .modal-form button {
+    background-color: #4CAF50; /* Bouton vert */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .modal-form button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Bouton pour fermer la modal */
+  .close-modal-btn {
+    display: block;
+    margin: auto;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  

@@ -1,0 +1,36 @@
+h1 {
+    background-color: white;
+}
+
+/* Style pour le conteneur des cartes */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajustez la largeur minimale des cartes selon votre préférence */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px;
+  }
+  
+  /* Style pour chaque carte */
+  .card {
+    border: 1px solid #ccc; /* Bordure des cartes */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    padding: 20px; /* Espacement interne */
+    background-color: white; /* Couleur de fond */
+    transition: transform 0.2s; /* Animation au survol */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+  }
+
+  .buy-tickets-btn {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Enlève le soulignement par défaut des liens */
+    margin-top: 10px;
+  }
+  

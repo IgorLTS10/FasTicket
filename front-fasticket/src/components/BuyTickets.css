@@ -1,0 +1,46 @@
+/* Conteneur pour les cartes de billets */
+.tickets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste la grille pour qu'elle remplisse l'espace disponible, avec chaque carte ayant au minimum 200px de large */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px; /* Padding autour de la grille pour un peu d'espace */
+    justify-content: center; /* Centre les cartes dans le conteneur si elles ne remplissent pas une ligne entière */
+  }
+  
+  /* Style pour chaque carte de billet */
+  .ticket-card {
+    border: 1px solid #ccc; /* Bordure légère pour la définition */
+    border-radius: 8px; /* Bords arrondis pour un look moderne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+    padding: 15px; /* Espace intérieur pour le contenu de la carte */
+    background-color: white; /* Couleur de fond blanche pour les cartes */
+    text-align: center; /* Centre le texte à l'intérieur de la carte */
+  }
+  
+  /* Style pour les titres des catégories dans les cartes */
+  .ticket-card h3 {
+    margin: 0 0 10px 0; /* Marge pour espacer le titre du reste du contenu */
+    color: #333; /* Couleur du texte foncé pour le contraste */
+  }
+  
+  /* Style pour les détails de prix dans les cartes */
+  .ticket-card p {
+    margin: 0; /* Pas de marge pour garder les cartes compactes */
+    font-weight: bold; /* Rend le prix plus visible */
+    color: #27ae60; /* Couleur verte pour mettre en évidence le prix */
+  }
+
+  .buy-ticket-btn {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    color: white; /* Texte blanc */
+    padding: 10px; /* Padding autour du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    cursor: pointer; /* Curseur en forme de pointeur */
+    margin-top: 10px; /* Espace au-dessus du bouton */
+  }
+  
+  .buy-ticket-btn:hover {
+    background-color: #45a049; /* Couleur plus foncée au survol */
+  }
+  

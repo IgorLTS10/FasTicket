@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffffffb;
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-links a, .navbar-search input, .navbar-buttons .btn {
+    color: #000000;
+    text-decoration: none;
+    text-size-adjust: 100%;
+    margin-right: 1rem;
+}
+
+.navbar-search input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 25px;
+    width: 300px;
+}
+
+.navbar-buttons .btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #000000;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    width: 125px;
+}
+
+.btn-white {
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.btn-black {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.nav-links a:hover, .navbar-buttons .btn:hover {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.btn:hover {
+    background-color: rgb(39, 161, 218);
+    color: #ffffff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .search-results {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Assurez-vous que les résultats sont affichés au-dessus des autres éléments */
+  }
+  
+  .search-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .search-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  
